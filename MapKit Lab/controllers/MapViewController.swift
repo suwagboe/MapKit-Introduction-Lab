@@ -21,9 +21,15 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.showsUserLocation = true
-        mapView.delegate = self
         
+        mapView.showsUserLocation = true
+        
+        userTrackingButton = MKUserTrackingButton(frame: CGRect(x: 20, y: 20, width: 40, height: 40))
+        mapView.addSubview(userTrackingButton)
+        userTrackingButton.mapView = mapView
+        
+        // the actions under map view. 
+        mapView.delegate = self
     }
 
 
