@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552B32D624047D83007621AB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 552B32D524047D83007621AB /* ImageKit */; };
 		55356B3224043D5D00715859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55356B3124043D5D00715859 /* AppDelegate.swift */; };
 		55356B3424043D5D00715859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55356B3324043D5D00715859 /* SceneDelegate.swift */; };
 		55356B3624043D5D00715859 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55356B3524043D5D00715859 /* MapViewController.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552B32D624047D83007621AB /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +150,9 @@
 			dependencies = (
 			);
 			name = "MapKit Introduction Lab";
+			packageProductDependencies = (
+				552B32D524047D83007621AB /* ImageKit */,
+			);
 			productName = "MapKit Lab";
 			productReference = 55356B2E24043D5D00715859 /* MapKit Introduction Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 55356B2524043D5C00715859;
+			packageReferences = (
+				552B32D424047D83007621AB /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 55356B2F24043D5D00715859 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -505,6 +513,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		552B32D424047D83007621AB /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		552B32D524047D83007621AB /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 552B32D424047D83007621AB /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55356B2624043D5C00715859 /* Project object */;
 }
