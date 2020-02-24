@@ -11,15 +11,6 @@ import NetworkHelper
 
 
 struct SchoolAPIClient {
-    
-static func getSchoolData() -> [SchoolData] {
-    let data = [SchoolData]()
-    
-    return data
-}
-    
-    
-    
     static func getSchoolLocations(completion: @escaping (Result<[SchoolData], AppError>) -> ()){
         let endpointURL = "https://data.cityofnewyork.us/resource/uq7m-95z8.json"
         

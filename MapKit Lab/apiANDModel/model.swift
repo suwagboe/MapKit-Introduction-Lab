@@ -11,9 +11,9 @@ import Foundation
 struct SchoolData: Codable{
     let schoolName: String
     let borough: String
-    let zip: Int
-    let latitude: Double
-    let longitude: Double
+    let zip: String
+    let latitude: String
+    let longitude: String
     let website: String
     
     private enum CodingKeys: String, Codable, CodingKey {
